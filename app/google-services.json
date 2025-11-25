@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "496854863918",
+    "project_id": "howlstagram-23626",
+    "storage_bucket": "howlstagram-23626.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496854863918:android:502a1f91f9cc8556e18fbf",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496854863918-qpjd02cqvvnb36rboradkmf21a27u294.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvz7imgjZiXNbOvVg8l27Rqi3vyJeW7q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496854863918-qpjd02cqvvnb36rboradkmf21a27u294.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
