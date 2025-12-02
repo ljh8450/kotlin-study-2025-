@@ -13,7 +13,7 @@
         tools:context=".AddPhotoActivity">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="35dp">
 
@@ -23,16 +23,17 @@
                 android:src="@drawable/logo_title" />
         </androidx.appcompat.widget.Toolbar>
 
-        <View
+        <LinearLayout
             android:id="@+id/toolbar_division"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/toolbar"
+            android:layout_below="@+id/my_toolbar"
+            android:orientation="horizontal"
             android:background="@color/colorDivision" />
 
         <ImageView
             android:scaleType="fitXY"
-            android:id="@+id/upload_imageview"
+            android:id="@+id/addphoto_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_below="@+id/toolbar_division"
@@ -42,28 +43,30 @@
             android:layout_marginBottom="7dp" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edit_textinputlayout"
+            android:id="@+id/editText"
             android:layout_marginRight="7dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="7dp"
-            android:layout_toRightOf="@id/upload_imageview"
+            android:layout_toRightOf="@id/addphoto_image"
             android:layout_below="@+id/toolbar_division"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <EditText
                 android:gravity="top"
-                android:id="@+id/addphoto_edit_edittext"
+                android:id="@+id/addphoto_edit_explain"
+                android:hint="@string/hint_image_content"
                 android:layout_width="match_parent"
                 android:layout_height="100dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/addphoto_upload_btn"
+            android:id="@+id/addphoto_btn_upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edit_textinputlayout"
-            android:layout_toRightOf="@+id/upload_imageview"
+            android:layout_below="@+id/editText"
+            android:theme="@style/ButtonStyle"
+            android:layout_toEndOf="@+id/addphoto_image"
             android:text="@string/upload_image" />
     </RelativeLayout>
 </layout>

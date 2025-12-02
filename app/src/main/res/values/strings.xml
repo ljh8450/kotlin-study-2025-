@@ -61,4 +61,5 @@
     <item name="visible" type="id" />
     <item name="masked" type="id" />
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_add_photo">AddPhotoActivity</string>
 </resources>
